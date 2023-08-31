@@ -1173,7 +1173,6 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #fff;
 }
 
-
 .page-section {
   position: relative;
   padding-top: 80px;
@@ -1181,9 +1180,16 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
-.page-section-pharma {
+.page-section-pharma{
   position: relative;
   padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.page-section-consult{
+  position: relative;
+  padding-top: 25px;
   padding-bottom: 10px;
   overflow: hidden;
 }
