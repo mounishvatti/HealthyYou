@@ -1509,7 +1509,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-consult-now {
   display: block;
   margin: 15px auto;
-  width: 60%;
+  width: 80%;
   max-width: 240px;
   background-color: #fff;
   border-radius: 5px;
