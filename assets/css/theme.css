@@ -1173,6 +1173,24 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #fff;
 }
 
+.page-section-yoga {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 170px;
+  overflow: hidden;
+}
+
+.page-section-benefits_of_yoga {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 170px;
+  overflow: hidden;
+}
+
 .page-section {
   position: relative;
   padding-top: 80px;
@@ -2080,6 +2098,9 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 11;
 }
 
+.yoga-asana{
+  font-weight: 700;
+}
 
 /* Custom Plugin */
 .owl-nav {
