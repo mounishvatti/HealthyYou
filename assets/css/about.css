@@ -65,10 +65,6 @@
     color: lightyellow;
 }
 
-.submit-btn{
-    background-color: #06be93;
-    color: lightyellow;
-}
 
 /* CSS to center the button */
 .button-container {
@@ -123,7 +119,7 @@
 
 .faq-section {
     background-color: #f9f9f9;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .faq-container {
