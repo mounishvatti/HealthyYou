@@ -1,0 +1,130 @@
+:root {
+  --box-height: 40px;
+  --border-radius: 5px;
+  --space-between: 20px;
+  --font-size: 16px;
+
+  --color-0: #ffffff;
+  --color-1: #dcdcdd;
+  --color-2: #c5c3c6;
+  --color-3: #212529;
+  --color-4: #659b5e;
+  --color-5: #ce4257;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 10px;
+  background-image: url("https://i.postimg.cc/BnhHF28S/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash-modified.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#survey-container {
+  margin: 20px auto;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 840px;
+  border-radius: calc(3 * var(--border-radius));
+}
+
+#title {
+  margin: 30px 0;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: var(--color-3);
+}
+
+#description {
+  margin: 30px 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-3);
+}
+
+#survey-form {
+  padding: 30px;
+  padding-top: 20px;
+  background: var(--color-1);
+  opacity: 98%;
+  border: none;
+  border-radius: calc(2 * var(--border-radius));
+}
+
+#survey-form * {
+  font-size: var(--font-size);
+}
+
+.row-label,
+.row-input {
+  padding: 5px 10px;
+  margin: 0;
+  height: var(--box-height);
+  width: 100%;
+  display: block;
+}
+
+.row-label {
+  color: var(--color-3);
+  font-weight: 600;
+}
+
+.row-label:not(:first-child) {
+  margin-top: var(--space-between);
+}
+
+.row-input:not(.small) {
+  background: white;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.inline-label {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--color-3);
+}
+
+.small {
+  height: calc(var(--box-height) * 0.75);
+}
+
+#comments {
+  padding: 10px;
+  margin: 0;
+  height: 120px;
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: var(--border-radius);
+  resize: none;
+}
+
+#submit {
+  margin-top: calc(2 * var(--space-between));
+  height: var(--box-height);
+  width: 100%;
+  background: var(--color-4);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+#submit:hover {
+  box-shadow: 0 0 2px var(--color-3);
+}
