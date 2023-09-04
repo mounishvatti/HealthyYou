@@ -2037,6 +2037,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 16px;
   background-color: #2D3B38;
   color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
 .page-footer h5 {
