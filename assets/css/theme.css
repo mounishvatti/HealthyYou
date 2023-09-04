@@ -1198,9 +1198,32 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
+
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  gap: 15px;
+}
+
+.features .feature-set img{
+  display: block;
+  max-width: 90%;
+  height: 100;
+}
+
+.feature-set{
+  max-width: 540px;
+}
+
+.feature-set a{
+  text-decoration: none;
+}
+
 .page-section-partners {
   position: relative;
-  padding-top: 80px;
+  padding-top: 60px;
   overflow: hidden;
 }
 
@@ -1595,6 +1618,86 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 5px 10px;
 }
 
+.card-pharmacy-cat {
+  display: block;
+  margin: 15px auto;
+  width: 150%;
+  max-width: 240px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
+  overflow: hidden;
+}
+
+.card-pharmacy-cat .text-xl {
+  font-weight: 300;
+}
+
+.card-pharmacy-cat .header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-pharmacy-cat .header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 53, 49, 0.36);
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.card-pharmacy-cat .header .meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.card-pharmacy-cat:hover .header .meta {
+  bottom: 15px;
+  visibility: visible;
+}
+
+.card-pharmacy-cat:hover .header img{
+  transform : scale(1.1) ;
+  transform-style: inherit;
+  transition-duration: 600ms;
+}
+
+.card-pharmacy-cat .header .meta a {
+  display: inline-block;
+  margin: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5%;
+  text-align: center;
+  background-color: #fff;
+  color: #6E807A;
+  box-shadow: 0 4px 8px rgba(154, 159, 151, 0.6);
+  transition: all .2s ease;
+}
+
+.card-pharmacy-cat .header .meta a:hover {
+  text-decoration: none;
+  background-color: #6E807A;
+  color: #fff;
+}
+
+.card-pharmacy-cat .header img {
+  width: 100%;
+}
+
 .card-pharmacy {
   display: block;
   margin: 15px auto;
@@ -1834,9 +1937,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .partners img{
-  height: 170px;
+  height: 100px;
   border-radius: 8px;
-  box-shadow: 0 5px 12px rgba(154, 159, 151, 0.3);
 }
 
 .partners img:hover{
