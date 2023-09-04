@@ -1456,7 +1456,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   max-width: 240px;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
   overflow: hidden;
 }
@@ -1538,7 +1538,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-consult-now {
   display: block;
   margin: 15px auto;
-  width: 80%;
+  width: 90%;
   max-width: 240px;
   background-color: #fff;
   border-radius: 8px;
@@ -1596,7 +1596,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border-radius: 50%;
+  border-radius: 20px;
   text-align: center;
   background-color: #fff;
   color: #6E807A;
@@ -1615,7 +1615,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .card-consult-now .body {
-  padding: 5px 10px;
+  padding: 10px 20px;
 }
 
 .card-pharmacy-cat {
@@ -1792,6 +1792,17 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
+.card-blog-offer {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  overflow: hidden;
+  width: 60%;
+}
+
 .card-blog .header {
   width: 100%;
   height: 140px;
@@ -1817,6 +1828,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 15px 20px;
 }
 
+.card-blog-offer .body {
+  padding: 15px 20px;
+}
+
 .card-blog .post-category {
   position: absolute;
   top: 15px;
@@ -1831,6 +1846,26 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #4E5AFE;
   color: #fff;
   border-radius: 40px;
+}
+
+.card-blog-offer .post-category-offer {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 9;
+}
+
+.card-blog-offer .post-category-offer a {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #47c55c;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.card-blog-offer .post-category-offer a:hover {
+  text-decoration: none;
 }
 
 .card-blog .post-category a:hover {
