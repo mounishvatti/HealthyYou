@@ -14,4 +14,4 @@
 
 ### Note: This website is still under development
   
-### <a href="https://github.com/mounishvatti/healthy-you/blob/main/html/index.html">Click here</a> to access the Healthy-You website.
+### <a href="html/index.html">Click here</a> to access the Healthy-You website.
