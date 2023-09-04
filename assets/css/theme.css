@@ -1198,6 +1198,12 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
+.page-section-partners {
+  position: relative;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
 .page-section-pharma{
   position: relative;
   padding-top: 10px;
@@ -1819,6 +1825,22 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
   background-color: #07be94;
   color: #fff;
+}
+
+.partners{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+.partners img{
+  height: 170px;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(154, 159, 151, 0.3);
+}
+
+.partners img:hover{
+  box-shadow: 5px 10px 20px rgba(154, 159, 151, 0.3);
 }
 
 .sidebar-block {
