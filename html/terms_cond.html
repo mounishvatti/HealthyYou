@@ -149,11 +149,21 @@
     <br>
     <div class="button-container">
       <a href="#terms_cond" target="_blank">
-        <button class="btn">Click here to accept the terms</button>
+        <button id="acceptTermsBtn" class="btn">Click here to accept the terms</button>
       </a>
     </div>
-
-  </div>
+  
+    <script>
+      // JavaScript code
+      const acceptTermsButton = document.getElementById('acceptTermsBtn');
+  
+      acceptTermsButton.addEventListener('click', function() {
+        // Perform any action you want when the button is clicked
+        alert('Terms accepted!'); // Example: Show an alert
+        // You can also redirect the user or perform other actions here
+      });
+    </script>
+    </div>
 
     <footer class="page-footer">
         <div class="container">
