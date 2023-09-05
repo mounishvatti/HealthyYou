@@ -260,6 +260,12 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: transparent;
 }
 
+.btn-primary-hosp{
+  background-color: #03a882;
+  border-color: transparent;
+  color: #fff;
+}
+
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
   background-color: #07be94;

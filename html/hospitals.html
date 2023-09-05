@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Page</title>
-    <!-- <link rel="stylesheet" href="SignIn.css"> -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/theme.css">
-    <link rel="stylesheet" href="../assets/css/signup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Find Hospitals</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
 </head>
+
 <body>
     <header>
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 text-sm">
+                <div class="site-info">
+                  <a href="#"><span class="mai-call text-primary"></span> +91 9836299304</a>
+                  <span class="divider">|</span>
+                  <a href="#"><span class="mai-mail text-primary"></span> healthyyou@gmail.com</a>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right text-sm">
+                <div class="social-mini-button">
+                  <a href="https://www.facebook.com/"><span class="mai-logo-facebook-f"></span></a>
+                  <a href="https://www.instagram.com/"><span class="mai-logo-twitter"></span></a>
+                  <a href="https://github.com/mounishvatti/healthy-you" target="_blank"><span
+                      class="mai-logo-github"></span></a>
+                  <a href="https://twitter.com/login"><span class="mai-logo-instagram"></span></a>
+                </div>
+              </div>
+            </div> <!-- .row -->
+          </div> <!-- .container -->
+        </div> <!-- .topbar -->
+    
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
           <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">Healthy</span>-You</a>
+            <a class="navbar-brand" href="index.html"><span class="text-primary">Healthy</span>-You</a>
+            <form action="#">
+              <div class="input-group input-navbar">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter keyword" aria-label="Username" aria-describedby="icon-addon1">
+              </div>
+            </form>
     
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
               aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,45 +82,37 @@
         </nav>
       </header>
 
-    <div class="logo">
-        <i class="fa-solid fa-link"></i>
-        <h3>Sign In</h3>
-    </div>
+      <!--header-->
 
-    <div class="container">
-        <h3>Welcome Back!</h3>
-        <p>we missed you please enter your details.</p>
-
-        <form action="" autocomplete="on">
-            <label for="email">Email *</label><br>
-            <input style="width: 90%;" type="email" id="email" placeholder="Enter E-Mail ID" required><br>
-            <label for="pass">Password *</label><br>
-            <input style="width: 90%;" type="password" id="pass" placeholder="Enter Password"><br>
-            <input style="margin-left: 10px;" type="checkbox" id="remember">
-            <label style="margin-left: 0px;padding-right: 20px;font-weight: 100;" for="remember">Remember me</label>
-            <a href="">Forget Password?</a><br>
-
-            <div class="signin">
-                <button type="submit">Sign in</button><br>
-                <button type="button">
-                    <i class="fa-brands fa-google"></i>   Sign in with Google
-                </button>
+      <div class="page-section-pharma pb-0 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 py-3">
+                    <h1>Find Hospitals near you</h1>
+                    <p class="text-grey mb-4" style="line-height: 30px; padding-top: 30px;">With Healthy-You you can find hospitals near you<br>Locate a hospital with our hospital locator</p>
+                    <br><a href="#" class="btn btn-primary-hosp">Locate Now</a><br><br>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-place custom-img-1">
+                        <img src="../assets/img/findhospital-removebg-preview.png" alt="findhospital">
+                    </div>
+                </div>
             </div>
+        </div>
+    </div> <!-- .bg-light -->
 
-        </form>
-        
-        <p>Don't have an account?
-            <a href="">Sign Up</a>
-        </p>
+    <div class="page-section">
+        <h2 class="text-xl-center" style="font-weight: 500; color:rgb(38, 134, 81);">Coming Soon...</h2>
+
     </div>
-    <footer class="page-footer" style="position: static;">
+      <footer class="page-footer">
         <div class="container">
           <div class="row px-md-3">
             <div class="col-sm-6 col-lg-3 py-3">
               <h5>Company</h5>
               <ul class="footer-menu">
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="https://www.linkedin.com">Career</a></li>
+                <li><a href="#">Career</a></li>
                 <li><a href="#">Editorial Team</a></li>
                 <li><a href="#">Protection</a></li>
               </ul>
@@ -132,5 +162,11 @@
         </div>
       </footer>
 
+      <!--footer-->
+
+    <script src="../assets/js/google-maps.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
 </body>
+
 </html>
