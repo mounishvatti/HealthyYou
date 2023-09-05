@@ -2287,3 +2287,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 14px !important;
   border-radius: 40px 0 0 40px;
 }
+
+
+.container form .signin button {
+  background-color: #7de5ff;
+  color: white;
+}
+.container form .signin button:hover {
+  background-color: var(--primary);
+}
