@@ -92,23 +92,23 @@
     <div class="container">
       <h1 class="text-center">Get in Touch</h1>
 
-      <form class="contact-form mt-5">
+      <form class="contact-form mt-5" id="contactForm">
         <div class="row mb-3">
           <div class="col-sm-6 py-2">
             <label for="fullName">Name</label>
-            <input type="text" id="fullName" class="form-control" placeholder="Full name..">
+            <input type="text" id="fullName" class="form-control" placeholder="Full name.." required>
           </div>
           <div class="col-sm-6 py-2">
             <label for="emailAddress">Email</label>
-            <input type="text" id="emailAddress" class="form-control" placeholder="Email address..">
+            <input type="email" id="emailAddress" class="form-control" placeholder="Email address.." required>
           </div>
           <div class="col-12 py-2">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" placeholder="Enter subject..">
+            <input type="text" id="subject" class="form-control" placeholder="Enter subject.." required>
           </div>
           <div class="col-12 py-2">
             <label for="message">Message</label>
-            <textarea id="message" class="form-control" rows="8" placeholder="Enter Message.."></textarea>
+            <textarea id="message" class="form-control" rows="8" placeholder="Enter Message.." required></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-primary zoomIn">Send Message</button>
@@ -116,26 +116,27 @@
     </div>
   </div>
 
-  <div class="maps-container">
-    <div id="google-maps"></div>
-  </div>
+  <script>
+    // JavaScript code for form validation
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent the form from submitting
+      const fullName = document.getElementById('fullName').value;
+      const emailAddress = document.getElementById('emailAddress').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
 
-  <div class="page-section banner-home bg-image">
-    <div class="container py-5 py-lg-0">
-      <div class="row align-items-center">
-        <div class="col-lg-4 zoomIn">
-          <div class="img-banner d-none d-lg-block">
-            <img src="../assets/img/mobile_app-removebg-preview.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <h1 class="font-weight-normal mb-3">Get easy access of all features using Healthy-You Application</h1>
-          <a href="#"><img src="../assets/img/google_play.svg" alt=""></a>
-          <a href="#" class="ml-2"><img src="../assets/img/app_store.svg" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </div> <!-- .banner-home -->
+      // Basic form validation
+      if (!fullName || !emailAddress || !subject || !message) {
+        alert('Please fill in all fields before submitting.');
+      } else {
+        // You can submit the form to a server here or perform other actions
+        alert('Form submitted successfully!');
+        // Optionally, you can reset the form
+        contactForm.reset();
+      }
+    });
+  </script>
 
   <footer class="page-footer">
     <div class="container">
@@ -144,7 +145,7 @@
           <h5>Company</h5>
           <ul class="footer-menu">
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Career</a></li>
+            <li><a href="https://www.linkedin.com">Career</a></li>
             <li><a href="#">Editorial Team</a></li>
             <li><a href="#">Protection</a></li>
           </ul>
