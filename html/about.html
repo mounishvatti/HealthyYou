@@ -318,41 +318,63 @@
 
   <section class="faq-section">
     <div class="faq-container">
-        <div class="faq-question">
+        <div class="faq-question" onclick="toggleAnswer(this)">
             What is HealthyYou?
         </div>
         <div class="faq-answer">
             HealthyYou is a digital health platform dedicated to providing accessible and affordable healthcare services and information.
         </div>
 
-        <div class="faq-question">
+        <div class="faq-question" onclick="toggleAnswer(this)">
             How can I consult a doctor online?
         </div>
         <div class="faq-answer">
             You can consult qualified and registered doctors through our partner sites by using our online consultation service.
         </div>
-        <div class="faq-question">
+        <div class="faq-question" onclick="toggleAnswer(this)">
             What services does HealthyYou offer?
         </div>
         <div class="faq-answer">
             HealthyYou offers online consultation with doctors, an e-pharmacy service for ordering medicines and health products, yoga and health plans, and authentic health information.
         </div>
 
-        <div class="faq-answer">
+        <div class="faq-question" onclick="toggleAnswer(this)">
             How can I access authentic health content on HealthyYou?
         </div>
         <div class="faq-answer">
             You can access reliable health content written by qualified doctors and professionals on our platform. Simply navigate to the health content section to find articles and information.
         </div>
-
+       <br><br>
         <div class="user-section">
-            <h2>Have a question? Describe your problem:</h2>
+            <h2>Have a question? Describe your problem:</h2><br>
             <textarea id="user-problem" rows="4" cols="50"></textarea>
             <button id="submit-btn">Submit</button>
         </div>
         
 
         
+    </div>
+</section>
+
+<script>
+    function toggleAnswer(question) {
+        var answer = question.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+
+    var submitButton = document.getElementById("submit-btn");
+
+    // Add a click event listener to the submit button
+    submitButton.addEventListener("click", function() {
+        // Show an alert box when the button is clicked
+        alert("Query Submitted");
+    });
+</script>
+
     </div>
   </section>
 
