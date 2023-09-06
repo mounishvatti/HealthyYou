@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<link href="../assets/css/job.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/theme.css">
+
+</head>
+
+<div id="survey-container">
+
+  <h1 id="title">Doctor Application Form for Healthy-You</h1>
+
+  <p id="description">Fill in to apply</p>
+
+  <form id="survey-form">
+
+    <!-- name -->
+    <label id="name-label" class="row-label" for="name">Name:</label>
+    <input id="name" class="row-input" type="text" placeholder="Enter your name" required>
+
+    <!-- email -->
+    <label id="email-label" class="row-label" for="email">Email:</label>
+    <input id="email" class="row-input" type="email" placeholder="Enter your email" required>
+
+    <!-- education dropdown -->
+    <label class="row-label" for="dropdown">Level of education:</label>
+    <select id="dropdown" class="row-input" required>
+      <option disabled selected>Select an option</option>
+      <option value="primary">MBBS</option>
+      <option value="secondary">Specialization</option>
+      <option value="higher">PHD</option>
+      <option value="na">No answer</option>
+    </select>
+
+    <!-- years of experience -->
+    <label id="number-label" class="row-label" for="number">Years of experience (optional):</label>
+    <input id="number" class="row-input" type="number" placeholder="Enter number of years of experience" min="0" max="50">
+
+    <!-- programs checkbox -->
+    <p class="row-label">No of Hours interested to work in our platform</p>
+
+    <label class="row-input small" for="box-windows">
+      <input type="checkbox" id="box-windows" name="checkbox" value="windows">
+      <span class="inline-label">1-2</span>
+    </label>
+
+    <label class="row-input small" for="box-word">
+      <input type="checkbox" id="box-word" name="checkbox" value="word">
+      <span class="inline-label">3-4</span>
+    </label>
+
+    <label class="row-input small" for="box-excel">
+      <input type="checkbox" id="box-excel" name="checkbox" value="excel">
+      <span class="inline-label">4-6</span>
+    </label>
+
+    <label class="row-input small" for="box-powerpoint">
+      <input type="checkbox" id="box-powerpoint" name="checkbox" value="powerpoint">
+      <span class="inline-label">6-8 shift wise </span>
+    </label>
+
+    <label class="row-input small" for="box-outlook">
+      <input type="checkbox" id="box-outlook" name="checkbox" value="outlook">
+      <span class="inline-label">Fulltime</span>
+    </label>
+
+    <!-- salary radio -->
+    <p class="row-label">Expected salary:</p>
+
+    <label class="row-input small" for="below-3k">
+      <input type="radio" id="below-3k" name="radio" value="below-3k">
+      <span class="inline-label">Below $3K</span>
+    </label>
+
+    <label class="row-input small" for="3k-4k">
+      <input type="radio" id="3k-4k" name="radio" value="3k-4k">
+      <span class="inline-label">$3K - $4K</span>
+    </label>
+
+    <label class="row-input small" for="4k-5k">
+      <input type="radio" id="4k-5k" name="radio" value="4k-5k">
+      <span class="inline-label">$4K - $5K</span>
+    </label>
+
+    <label class="row-input small" for="above-5k">
+      <input type="radio" id="above-5k" name="radio" value="above-5k">
+      <span class="inline-label">Above $5K</span>
+    </label>
+
+    <label class="row-input small" for="dont-know">
+      <input type="radio" id="dont-know" name="radio" value="dont know">
+      <span class="inline-label">Don't know</span>
+    </label>
+
+    <!-- comments textarea -->
+    <label class="row-label" for="comments">Additional informations:</label>
+    <textarea id="comments" placeholder="Enter other informations here..."></textarea>
+
+    <!-- submit button -->
+    <button id="submit" type="submit">Submit</button>
+
+    <script>
+      // Get a reference to the submit button
+      var submitButton = document.getElementById("submit");
+  
+      // Add a click event listener to the submit button
+      submitButton.addEventListener("click", function() {
+          // Show an alert box when the button is clicked
+          alert("Yay!Application Form Submitted We will reach You soon!");
+      });
+    </script>
+  
+
+  </form>
+</div>
+</html>
