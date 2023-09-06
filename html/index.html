@@ -384,17 +384,17 @@
             <input type="date" class="form-control">
           </div>
           <div class="col-12 col-sm-6 py-2">
-            <select name="departement" id="departement" class="custom-select">
+            <select name="department" id="department" class="custom-select">
               <option value="general">General Health</option>
               <option value="cardiology">Cardiology</option>
               <option value="dental">Dental</option>
               <option value="neurology">Neurology</option>
               <option value="orthopaedics">Orthopaedics</option>
-              <option value="gynecology">Gynecology</option>
+              <option value="gynaecology">Gynaecology</option>
             </select>
           </div>
           <div class="col-12 py-2">
-            <input type="text" class="form-control" placeholder="Number..">
+            <input type="number" class="form-control" placeholder="Mobile Number..">
           </div>
           <div class="col-12 py-2">
             <textarea name="message" id="message" class="form-control" rows="6"
@@ -402,7 +402,12 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3 zoomIn">Submit Request</button>
+        <button onclick="makeappointment()" type="submit" class="btn btn-primary mt-3 zoomIn">Submit Request</button>
+        <script>
+          function makeappointment() {
+            alert("Your response has been submitted");
+          }
+        </script>
       </form>
     </div>
   </div> <!-- .page-section -->
