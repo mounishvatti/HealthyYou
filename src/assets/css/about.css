@@ -57,7 +57,7 @@
 
 .pic{
     background-image: url("../img/About/countryside.png");
-    
+    background-repeat: none;
 }
 
 .btn{
