@@ -140,5 +140,32 @@
     color: #666;
     display: none;
 }
+
+/* Define a custom animation called 'button-grow' */
+@keyframes button-grow {
+    0% {
+      transform: scale(1);
+      background-color: #007bff; /* Initial background color */
+    }
+    50% {
+      transform: scale(1.05); /* Grow the button slightly */
+      background-color: #0056b3; /* New background color at 50% */
+    }
+    100% {
+      transform: scale(1);
+      background-color: #007bff; /* Return to the initial background color */
+    }
+  }
   
+  /* Apply the 'button-grow' animation to the submit button */
+  .submit-button {
+    animation: button-grow 2s ease; /* Apply the animation with a 0.5-second duration */
+  }
+  
+  /* Add a hover effect to trigger the animation */
+  .submit-button:hover {
+    animation: button-grow 2s ease; /* Apply the animation on hover as well */
+  }
+  
+
   

@@ -105,13 +105,35 @@
 
     <script>
       // Get a reference to the submit button
-      var submitButton = document.getElementById("submit");
-  
-      // Add a click event listener to the submit button
-      submitButton.addEventListener("click", function() {
-          // Show an alert box when the button is clicked
-          alert("Yay!Application Form Submitted We will reach You soon!");
-      });
+    
+  // Get a reference to the submit button and the form
+  var submitButton = document.getElementById("submit");
+  var form = document.getElementById("survey-form");
+
+  // Add a click event listener to the submit button
+  submitButton.addEventListener("click", function(event) {
+    // Check if the Name, Email, and Education fields are empty
+    var nameInput = document.getElementById("name");
+    var emailInput = document.getElementById("email");
+    var educationDropdown = document.getElementById("dropdown");
+
+    if (
+      nameInput.value.trim() === "" ||
+      emailInput.value.trim() === "" ||
+      educationDropdown.value === "Select an option"
+    ) {
+      // Prevent form submission
+      event.preventDefault();
+
+      // Display an error message to the user
+      alert("Please fill in all required fields: Name, Email, and Education");
+    } else {
+      // Allow form submission
+      alert("Yay! Application Form Submitted. We will reach you soon!");
+    }
+  });
+</script>
+
     </script>
   
 
