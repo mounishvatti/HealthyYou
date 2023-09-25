@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.map-container {
+    margin: 0 auto;
+    height: 600px;
+    width: 1000px;
+    color: white;
+}
+
+.map button{
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    background-color: #06be93;
+    color: white;
+}
+
+.map button:hover {
+    background-color: #05B4E1;
+}
+
+.map {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
