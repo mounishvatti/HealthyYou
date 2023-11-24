@@ -378,13 +378,13 @@
       <form class="main-form">
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2">
-            <input type="text" class="form-control" placeholder="Full name">
+            <input type="text" name = "name" id = "name" class="form-control" placeholder="Full name">
           </div>
           <div class="col-12 col-sm-6 py-2">
-            <input type="text" class="form-control" placeholder="Email address..">
+            <input type="text" name = "email" id="email" class="form-control" placeholder="Email address..">
           </div>
           <div class="col-12 col-sm-6 py-2">
-            <input type="date" class="form-control">
+            <input type="date" name = "date" id="date" class="form-control">
           </div>
           <div class="col-12 col-sm-6 py-2">
             <select name="department" id="department" class="custom-select">
@@ -408,7 +408,17 @@
         <button onclick="makeappointment()" type="submit" class="btn btn-primary mt-3 zoomIn">Submit Request</button>
         <script>
           function makeappointment() {
-            alert("Your response has been submitted");
+            // Get the values from the form.
+            let dep = document.getElementById("department").value;
+            let name = document.getElementById("name").value;
+            let date = document.getElementById("date").value;
+            let email = document.getElementById("email").value;
+            if(dep == " " || name == " " || email=="" || date==""){
+              alert("All fields are mandatory!!");
+            }
+            else{
+              alert("Your response has been submitted");
+            }
           }
         </script>
       </form>
