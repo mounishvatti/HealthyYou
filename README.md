@@ -1,6 +1,4 @@
 # Healthy-You
-
-## Healthy-You is a responsive web application that allows users to consult doctors, buy medicines, read health blogs, learn about yoga, and find hospitals nearby.
 <img src="/src/assets/img/forReadme/1.png" alt="">
 
 # Features
